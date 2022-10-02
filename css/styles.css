@@ -808,12 +808,16 @@ transition: color 250ms var(--timing-function);
 
 .modal-label {
     display: block;
-    position: relative;
+    
 
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--secondary-text-color-theme-light);
+}
+
+.modal-input-thumb {
+    position: relative;
 }
 
 .modal-form-text {
@@ -943,13 +947,14 @@ transition: color 250ms var(--timing-function);
     position: absolute;
     top: 50%;
     left: 12px;
+    transform: translateY(-50%);
     display: inline-block;
     fill: var(--primary-text-color-theme-light);
 
     transition: fill 250ms var(--timing-function);
 }
 
-.modal-label:focus-within > .modal-icon {
+.modal-label:focus-within .modal-icon {
     fill: var(--primary-accent-color);
 }
 
